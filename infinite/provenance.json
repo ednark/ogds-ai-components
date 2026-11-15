@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "registry": "ogds-ai-components",
+  "note": "Session log of registry building. Per-tile provenance lives in each tile's provenance block.",
+  "sessions": [
+    {
+      "date": "2026-11-15",
+      "source": "https://github.com/open-government-design-system/ogds-elements + @ogds/elements@1.0.0-beta.2 (npm, installed-package ground truth)",
+      "title": "Initial registry build from ogds-elements v1.0.0-beta.2",
+      "method": "design-system documentation",
+      "findings": [
+        "ogds-elements is a Lit web-component library (7 components) over @ogds/tokens (USWDS-derived ramps); verified against the installed npm package, not the GitHub clone, so the pin is CI-installable",
+        "Tiles are the flattened rendered DOM: shadow-DOM content with slot fallback/story content realized; :host/::slotted/::part selectors transformed mechanically by tools/build-ground-truth.mjs (class names unchanged)",
+        "Runtime-injected icon custom properties (alert, accordion, primary-nav, banner, header, task-list-step) are not in the package .css files — enumerated in tools/build-ground-truth.mjs ICON_BLOCKS and resolved to data URIs from package SVGs",
+        "Component CSS uses native nesting and @layer ogds.components; alert bundles its own copy of the token palette (base-variables.css, excluded from derivation); banner bundles color/spacing/breakpoint tokens",
+        "Upstream defect recorded: ogds-banner's button declares aria-controls=\"gov-banner-default\" but the template omits the matching id on .content — tiles add the id (documented per tile in constraints.limitations)",
+        "Upstream defect recorded: ogds-header's menu button declares aria-controls=\"nav\" targeting the mobile-only <dialog id=\"nav\">; static desktop tiles omit the attribute (documented per tile)",
+        "task-list counter is computed once on slotchange (no MutationObserver upstream) — recorded as a deliberate tradeoff in the task-list tile"
+      ],
+      "tilesAdded": 26
+    }
+  ]
+}

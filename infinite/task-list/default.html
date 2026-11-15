@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Open Government Design System task progress list with completion counter and four step states.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Task List (default)</title>
+<script type="application/json" id="ogds-agent-meta">{
+  "file": "task-list/default.html",
+  "title": "Task List (default)",
+  "_schemaVersion": 2,
+  "discovery": {
+    "description": "Task progress list: \"N of M tasks completed\" counter heading plus steps with status badges (not started, in progress, completed, cannot start yet).",
+    "tier": "curated",
+    "tags": [
+      "task list",
+      "progress",
+      "steps",
+      "workflow",
+      "counter",
+      "multi-page form"
+    ],
+    "ogdsComponentType": "task-list",
+    "ogdsElement": "ogds-task-list",
+    "ogdsUsage": "web-component",
+    "ogdsClass": "ogds-task-list",
+    "section": "content",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "focus",
+      "click",
+      "keyboard"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": false,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "Section 508",
+      "WCAG 2.1 AA"
+    ]
+  },
+  "selection": {
+    "useWhen": [
+      "Complex or multi-session workflows with 3–6 tasks across pages",
+      "Non-sequential task lists where the user chooses what to complete next"
+    ],
+    "avoidWhen": [
+      "Single-page forms or strictly linear flows (numbered steps in order are clearer)",
+      "Long task lists — the counter and list grow unwieldy past ~6 tasks"
+    ],
+    "guidance": [
+      {
+        "guidance": false,
+        "description": "Do not treat the badge as a USWDS tag pill — upstream notes the tag pill fails contrast expectations here"
+      },
+      {
+        "guidance": true,
+        "description": "Show completed tasks' submitted data (saved-data dl) so users trust their progress"
+      }
+    ]
+  },
+  "tradeoffs": {
+    "sacrifices": [
+      {
+        "capability": "live counter updates",
+        "because": "the upstream component counts step statuses once on slotchange (no MutationObserver) — dynamic status changes after mount are not reflected"
+      }
+    ],
+    "note": "ogds-task-list source comment, ogds-task-list.ts (_onSlotChange)"
+  },
+  "instruction": {
+    "agentPrompt": "The counter heading (level set by base-heading-level, default h2) reads \"N of M tasks completed\" — compute N by counting steps with status=\"completed\" at render time; the separator and label are replaceable inline content. Steps are ogds-task-list-step children: status ∈ {not-started, in-progress, completed, cannot-start-yet}; completed steps may carry a saved-data \u003cdl>. Blocked steps (cannot-start-yet) render a non-link title with aria-describedby pointing at the blocked message. The counter is static once rendered — recompute it server-side or on slot change in your app.",
+    "relatedComponents": [
+      "task-list-step",
+      "alert",
+      "accordion"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [
+      {
+        "name": "task-list-step",
+        "reason": "The list renders ogds-task-list-step children (embedded flattened in this tile)"
+      }
+    ],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "moderate",
+      "estimatedTokens": 3600,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    }
+  },
+  "constraints": {
+    "preserve": [
+      "section[aria-labelledby=\"counter\"] + .counter heading structure",
+      "ul.steps[role=\"list\"] with step children",
+      "The computed \"N of M\" counter reflects the rendered steps"
+    ],
+    "portableInvariants": [
+      "Progress statement (\"N of M completed\") visible before the task list",
+      "Per-task status communicated by text label, not color alone",
+      "Blocked tasks are non-interactive with an explanatory message"
+    ],
+    "editable": [
+      "Task titles, urls, descriptions",
+      "Counter separator/label strings",
+      "Instruction text",
+      "Step count (keep 3–6)"
+    ],
+    "limitations": [
+      "Do not use for single-page forms or linear step sequences",
+      "The dt/dd styling inside saved-data dl is left to the application CSS upstream — provide your own"
+    ]
+  },
+  "portability": {
+    "classMapping": {
+      "uswds": {
+        "base": "usa-process-list",
+        "variants": {}
+      }
+    }
+  },
+  "supportedTokenProfiles": [],
+  "provenance": {
+    "observed": "2026-11-15",
+    "method": "design-system documentation",
+    "tier": "design-system-source",
+    "source": "https://github.com/open-government-design-system/ogds-elements — src/components/ogds-task-list/ (render template, CSS, stories) at v1.0.0-beta.2",
+    "designSystemVersion": "1.0.0-beta.2",
+    "contractLayer": "css",
+    "contractNote": "the stylesheet targets .header/.counter/.steps under the root; the counter text is computed state at mount (slotchange), so the flattened tile bakes in \"1 of 4\""
+  }
+}</script>
+<style>
+/* ogds-task-list + ogds-task-list-step — derived light-DOM CSS from @ogds/elements@1.0.0-beta.2 (tools/build-ground-truth.mjs). */
+/* ogds tokens subset (generated by tools/build-ground-truth.mjs) */
+:root, :host {
+  --ogds-color-gray-50: #757575;
+  --ogds-color-gray-90: #1b1b1b;
+}
+
+/* --- ogds-task-list.css (from @ogds/elements@1.0.0-beta.2) --- */
+.ogds-task-list {
+  display: block;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-block-end: 1.5rem;
+}
+
+.counter {
+  color: var(--ogds-color-gray-90, #1b1b1b);
+  font-family:
+    "Source Sans Pro Web", "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  font-size: 2.125rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  padding-block-start: 1rem;
+}
+
+.ogds-task-list > * {
+  margin-block: 0;
+}
+
+.steps {
+  border-block-end: 1px solid
+    var(--ogds-task-list-border-color, var(--ogds-color-gray-50, #757575));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ogds tokens subset (generated by tools/build-ground-truth.mjs) */
+:root, :host {
+  --ogds-color-black: #000;
+  --ogds-color-blue-10: #d9e8f6;
+  --ogds-color-blue-5: #eff6fb;
+  --ogds-color-blue-80: #1f303e;
+  --ogds-color-blue-vivid-60: #005ea2;
+  --ogds-color-blue-vivid-70: #0b4778;
+  --ogds-color-gray-10: #e6e6e6;
+  --ogds-color-gray-40: #919191;
+  --ogds-color-gray-50: #757575;
+  --ogds-color-gray-90: #1b1b1b;
+  --ogds-color-mint-5: #dbf6ed;
+  --ogds-color-mint-70: #204e34;
+  --ogds-font-size-8: 1.25rem;
+}
+
+/* --- ogds-task-list-step.css (from @ogds/elements@1.0.0-beta.2) --- */
+.ogds-task-list-step {
+  --ogds-task-list-step-gap: 0.625rem;
+
+  border-top: 1px solid
+    var(--ogds-task-list-step-border-color, var(--ogds-color-gray-50, #757575));
+  display: flex;
+  flex-direction: column;
+  gap: var(--ogds-task-list-step-gap);
+  padding: 1.25rem 1rem;
+}
+
+.title {
+  font-family:
+    "Source Sans Pro Web", "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  font-size: var(--ogds-font-size-8);
+  font-weight: 700;
+  line-height: normal;
+
+  &:is(a) {
+    align-items: center;
+    align-self: flex-start;
+    color: var(--ogds-color-blue-vivid-60, #005ea2);
+    display: inline-flex;
+    gap: 0.5rem;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: var(--ogds-color-blue-vivid-70, #0b4778);
+    }
+  }
+
+  &:is(span) {
+    color: var(--ogds-color-gray-90, #1b1b1b);
+    display: block;
+  }
+}
+
+.arrow {
+  background-color: currentColor;
+  display: inline-block;
+  flex-shrink: 0;
+  height: 2rem;
+  mask-image: var(--ogds-icon-arrow-forward);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  width: 2rem;
+}
+
+/* Need some tokens for properties in here, but maybe
+   that can wait til it's its own component */
+.ogds-tag.badge {
+  align-items: center;
+  border-radius: 1.5rem;
+  display: inline-flex;
+  font-family:
+    "Source Sans Pro Web", "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  font-size: 1.1875rem;
+  gap: 0.625rem;
+  line-height: 1;
+  padding: 0.375rem 0.75rem;
+  width: fit-content;
+}
+
+.ogds-task-list-step[status="not-started"] .ogds-tag.badge {
+  background-color: var(--ogds-color-blue-5, #eff6fb);
+  color: var(--ogds-color-blue-80, #1f303e);
+}
+
+.ogds-task-list-step[status="in-progress"] .ogds-tag.badge {
+  background-color: var(--ogds-color-blue-10, #d9e8f6);
+  color: var(--ogds-color-blue-80, #1f303e);
+}
+
+.ogds-task-list-step[status="completed"] .ogds-tag.badge {
+  background-color: var(--ogds-color-mint-5, #dbf6ed);
+  color: var(--ogds-color-mint-70, #204e34);
+}
+
+.ogds-task-list-step[status="cannot-start-yet"] .ogds-tag.badge {
+  background-color: var(--ogds-color-gray-10, #e6e6e6);
+  color: var(--ogds-color-gray-90, #1b1b1b);
+}
+
+.badge-icon {
+  background-color: currentColor;
+  display: inline-block;
+  flex-shrink: 0;
+  height: 1.25rem;
+  mask-image: var(--ogds-icon-check-circle);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  width: 1.25rem;
+}
+
+.blocked-message {
+  color: var(--ogds-color-gray-90, #1b1b1b);
+  font-family:
+    "Source Sans Pro Web", "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.ogds-task-list-step > * {
+  margin-block: 0;
+}
+
+.ogds-task-list-step > :not([slot="title"]) {
+  font-family:
+    "Source Sans Pro Web", "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+/* Layout for the saved-data <dl>. dt/dd styles must come from global CSS —
+   .ogds-task-list-step() cannot reach descendants of slotted elements. */
+.ogds-task-list-step > dl {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* the styles in the app could be something like this:
+
+  ogds-task-list-step dt {
+    color: var(--ogds-color-gray-40, #919191);
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  ogds-task-list-step dd {
+    color: var(--ogds-color-black, #000);
+    font-size: 1.0625rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+ * */
+
+/* runtime-injected icon variables */
+.ogds-task-list-step {
+  --ogds-icon-check-circle: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202C6.48%202%202%206.48%202%2012s4.48%2010%2010%2010%2010-4.48%2010-10S17.52%202%2012%202zm-2%2015-5-5%201.41-1.41L10%2014.17l7.59-7.59L19%208l-9%209z%22%2F%3E%3C%2Fsvg%3E");
+  --ogds-icon-arrow-forward: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22m12%204-1.41%201.41L16.17%2011H4v2h12.17l-5.58%205.59L12%2020l8-8z%22%2F%3E%3C%2Fsvg%3E");
+}
+</style>
+</head>
+<body>
+<div class="ogds-task-list">
+  <section aria-labelledby="counter">
+    <div class="header">
+      <h2 class="counter" id="counter">1 <span>of</span> 4 <span>tasks completed</span></h2>
+      Finish all tasks to submit your application.
+    </div>
+    <ul class="steps" role="list">
+      <li class="ogds-task-list-step" role="listitem" status="completed">
+  <a class="title" href="/step-1" aria-describedby="badge-1">
+    Edit your profile<span class="arrow" aria-hidden="true"></span>
+  </a>
+  <span class="ogds-tag badge" id="badge-1"><span class="badge-icon" aria-hidden="true"></span>Completed</span>
+  <dl>
+    <dt>Phone number</dt>
+    <dd>(410) 123-4567</dd>
+    <dt>Email address</dt>
+    <dd>example@example.com</dd>
+  </dl>
+</li>
+<li class="ogds-task-list-step" role="listitem" status="in-progress">
+  <a class="title" href="/step-2" aria-describedby="badge-2">
+    Edit your address<span class="arrow" aria-hidden="true"></span>
+  </a>
+  <span class="ogds-tag badge" id="badge-2">In progress</span>
+  
+</li>
+<li class="ogds-task-list-step" role="listitem" status="not-started">
+  <a class="title" href="/step-3" aria-describedby="badge-3">
+    Submit additional supporting documents<span class="arrow" aria-hidden="true"></span>
+  </a>
+  <span class="ogds-tag badge" id="badge-3">Not started</span>
+</li>
+<li class="ogds-task-list-step" role="listitem" status="cannot-start-yet">
+  <span class="title" aria-describedby="blocked-message-4">Sign contractual agreement</span>
+  <span class="ogds-tag badge" id="badge-4">Cannot start yet</span>
+  <p class="blocked-message" id="blocked-message-4">Not available until previous tasks are complete.</p>
+</li>
+    </ul>
+  </section>
+</div>
+
+</body>
+</html>

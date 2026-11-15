@@ -1,0 +1,52 @@
+{
+  "name": "ogds-ai-components",
+  "description": "Open Government Design System (ogds-elements) registry for AI coding agents. Self-contained static tiles flattened from the ogds-elements web components, with adaptation, coordination, and compliance metadata.",
+  "repo": "https://github.com/ednark/ogds-ai-components",
+  "base": "https://raw.githubusercontent.com/ednark/ogds-ai-components/main",
+  "count": 26,
+  "facetsUrl": "https://raw.githubusercontent.com/ednark/ogds-ai-components/main/infinite/facets.json",
+  "index": "https://raw.githubusercontent.com/ednark/ogds-ai-components/main/infinite/components.index.json",
+  "indexSchemaVersion": 1,
+  "metadataSchemaVersion": 2,
+  "tileFetchPattern": "https://raw.githubusercontent.com/ednark/ogds-ai-components/main/infinite/{file}",
+  "designSystem": {
+    "name": "Open Government Design System (ogds-elements)",
+    "version": "1.0.0-beta.2"
+  },
+  "agentMetaId": "ogds-agent-meta",
+  "tileDir": "infinite",
+  "facets": [
+    "ogdsComponentType",
+    "section",
+    "variant",
+    "requiresJs",
+    "interaction",
+    "a11y",
+    "govCompliance",
+    "costTier",
+    "supportedTokenProfiles",
+    "origin"
+  ],
+  "versionsUrl": "https://raw.githubusercontent.com/ednark/ogds-ai-components/main/infinite/versions.json",
+  "compatibilityUrl": "https://raw.githubusercontent.com/ednark/ogds-ai-components/main/compatibility.json",
+  "compatibilityTargets": ["uswds"],
+  "mcp": {
+    "enabled": true,
+    "server": "_base/mcp/server.mjs",
+    "transport": "stdio",
+    "tools": [
+      "search_components",
+      "get_component",
+      "list_facets",
+      "get_index",
+      "get_adapter",
+      "translate_component",
+      "get_recipe",
+      "query_compliance",
+      "get_versions"
+    ]
+  },
+  "compatibilityPath": "compatibility.json",
+  "updated": "0.1.0",
+  "appearance": "Every tile has a generated resolved view: fetch {tileDir}/{file with .html replaced by .resolved.html} for a computed-style standalone rendering (geometry + colors inline, validated at build time). Index records expose the path as the resolvedView field. Tiles carry their component CSS inline (token subset + derived light-DOM stylesheet from @ogds/elements)."
+}

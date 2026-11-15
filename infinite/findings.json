@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "registry": "ogds-ai-components",
+  "note": "ogds-ai-components epistemic record. See _base/findings-ledger.md for the schema. Populated as deep-checks run against this registry.",
+  "findings": [
+    {
+      "id": "F-001",
+      "date": "2026-11-15",
+      "kind": "observation",
+      "result": "fixed",
+      "summary": "Per-component ground-truth sheets silently dropped the runtime-injected icon custom properties, so tile icons rendered as solid squares",
+      "target": ["infinite/ground-truth/*"],
+      "changed": [
+        "ground-truth: per-component sheet emitted before the runtime-injected icon block was appended — build script now appends the icon block to every emitted sheet"
+      ]
+    }
+  ]
+}

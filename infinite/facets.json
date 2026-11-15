@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "metadataSchemaVersion": 2,
+  "generatedBy": "_base/generate-index.mjs",
+  "total": 26,
+  "designSystem": "Open Government Design System (ogds-elements) 1.0.0-beta.2",
+  "facets": {
+    "ogdsComponentType": {
+      "accordion": 5,
+      "accordion-toggle": 2,
+      "alert": 6,
+      "banner": 4,
+      "header": 2,
+      "primary-nav": 2,
+      "task-list": 1,
+      "task-list-step": 4
+    },
+    "section": {
+      "content": 12,
+      "feedback": 6,
+      "navigation": 8
+    },
+    "variant": {
+      "bordered": 1,
+      "default": 6,
+      "with-icon-plus": 1,
+      "with-icon-right": 1,
+      "with-icon": 1,
+      "custom-labels": 1,
+      "error": 1,
+      "info": 1,
+      "no-icon": 1,
+      "slim": 1,
+      "success": 1,
+      "warning": 1,
+      "espanol": 1,
+      "expanded": 1,
+      "mil": 1,
+      "basic": 1,
+      "extended": 1,
+      "class-only": 1,
+      "blocked": 1,
+      "with-alert": 1,
+      "with-saved-data": 1
+    },
+    "requiresJs": {
+      "no": 18,
+      "required": 2,
+      "optional": 6
+    },
+    "interaction": {
+      "click": 20,
+      "keyboard": 20,
+      "focus": 13,
+      "hover": 2
+    },
+    "a11y": {
+      "wcag21AA": 26,
+      "keyboardNav": 26,
+      "screenReader": 26,
+      "reducedMotion": 24,
+      "ariaAttributes": 26,
+      "forcedColors": 4
+    },
+    "govCompliance": {
+      "Section 508": 26,
+      "WCAG 2.1 AA": 26
+    },
+    "costTier": {
+      "cheap": 17,
+      "moderate": 9
+    },
+    "supportedTokenProfiles": {
+      "highContrast": 4
+    },
+    "origin": {
+      "design-system": 26
+    }
+  }
+}

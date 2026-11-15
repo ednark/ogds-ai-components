@@ -1,0 +1,1265 @@
+{
+  "schemaVersion": 1,
+  "metadataSchemaVersion": 2,
+  "generatedBy": "_base/generate-index.mjs",
+  "counts": {
+    "total": 26,
+    "bySection": {
+      "content": 12,
+      "feedback": 6,
+      "navigation": 8
+    }
+  },
+  "components": [
+    {
+      "file": "accordion/bordered.html",
+      "title": "Accordion (bordered)",
+      "_schemaVersion": 2,
+      "description": "Accordion of native <details> panels styled by the Open Government Design System.",
+      "tier": "curated",
+      "tags": [
+        "accordion",
+        "details",
+        "disclosure",
+        "faq",
+        "expand"
+      ],
+      "ogdsComponentType": "accordion",
+      "ogdsElement": "ogds-accordion",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-accordion",
+      "section": "content",
+      "variant": "bordered",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "accordion-toggle",
+        "task-list"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "accordion/bordered.resolved.html"
+    },
+    {
+      "file": "accordion/default.html",
+      "title": "Accordion (default)",
+      "_schemaVersion": 2,
+      "description": "Accordion of native <details> panels styled by the Open Government Design System.",
+      "tier": "curated",
+      "tags": [
+        "accordion",
+        "details",
+        "disclosure",
+        "faq",
+        "expand"
+      ],
+      "ogdsComponentType": "accordion",
+      "ogdsElement": "ogds-accordion",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-accordion",
+      "section": "content",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "accordion-toggle",
+        "task-list"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "accordion/default.resolved.html"
+    },
+    {
+      "file": "accordion/with-icon-plus.html",
+      "title": "Accordion (with-icon-plus)",
+      "_schemaVersion": 2,
+      "description": "Accordion of native <details> panels styled by the Open Government Design System.",
+      "tier": "curated",
+      "tags": [
+        "accordion",
+        "details",
+        "disclosure",
+        "faq",
+        "expand"
+      ],
+      "ogdsComponentType": "accordion",
+      "ogdsElement": "ogds-accordion",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-accordion",
+      "section": "content",
+      "variant": "with-icon-plus",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "accordion-toggle",
+        "task-list"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "accordion/with-icon-plus.resolved.html"
+    },
+    {
+      "file": "accordion/with-icon-right.html",
+      "title": "Accordion (with-icon-right)",
+      "_schemaVersion": 2,
+      "description": "Accordion of native <details> panels styled by the Open Government Design System.",
+      "tier": "curated",
+      "tags": [
+        "accordion",
+        "details",
+        "disclosure",
+        "faq",
+        "expand"
+      ],
+      "ogdsComponentType": "accordion",
+      "ogdsElement": "ogds-accordion",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-accordion",
+      "section": "content",
+      "variant": "with-icon-right",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "accordion-toggle",
+        "task-list"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "accordion/with-icon-right.resolved.html"
+    },
+    {
+      "file": "accordion/with-icon.html",
+      "title": "Accordion (with-icon)",
+      "_schemaVersion": 2,
+      "description": "Accordion of native <details> panels styled by the Open Government Design System.",
+      "tier": "curated",
+      "tags": [
+        "accordion",
+        "details",
+        "disclosure",
+        "faq",
+        "expand"
+      ],
+      "ogdsComponentType": "accordion",
+      "ogdsElement": "ogds-accordion",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-accordion",
+      "section": "content",
+      "variant": "with-icon",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "accordion-toggle",
+        "task-list"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "accordion/with-icon.resolved.html"
+    },
+    {
+      "file": "accordion-toggle/custom-labels.html",
+      "title": "Accordion Toggle (custom-labels)",
+      "_schemaVersion": 2,
+      "description": "Expand/collapse-all button for an ogds-accordion, with labels that flip based on panel state.",
+      "tier": "curated",
+      "tags": [
+        "accordion",
+        "toggle",
+        "button",
+        "expand-all",
+        "collapse-all"
+      ],
+      "ogdsComponentType": "accordion-toggle",
+      "ogdsElement": "ogds-accordion-toggle",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-accordion-toggle",
+      "section": "content",
+      "variant": "custom-labels",
+      "requiresJs": "required",
+      "interaction": [
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "accordion"
+      ],
+      "prerequisites": [
+        "accordion"
+      ],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "origin": "design-system",
+      "resolvedView": "accordion-toggle/custom-labels.resolved.html"
+    },
+    {
+      "file": "accordion-toggle/default.html",
+      "title": "Accordion Toggle (default)",
+      "_schemaVersion": 2,
+      "description": "Expand/collapse-all button for an ogds-accordion, with labels that flip based on panel state.",
+      "tier": "curated",
+      "tags": [
+        "accordion",
+        "toggle",
+        "button",
+        "expand-all",
+        "collapse-all"
+      ],
+      "ogdsComponentType": "accordion-toggle",
+      "ogdsElement": "ogds-accordion-toggle",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-accordion-toggle",
+      "section": "content",
+      "variant": "default",
+      "requiresJs": "required",
+      "interaction": [
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "accordion"
+      ],
+      "prerequisites": [
+        "accordion"
+      ],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "origin": "design-system",
+      "resolvedView": "accordion-toggle/default.resolved.html"
+    },
+    {
+      "file": "alert/error.html",
+      "title": "Alert (error)",
+      "_schemaVersion": 2,
+      "description": "Error alert with left accent bar and icon, from the Open Government Design System web components.",
+      "tier": "curated",
+      "tags": [
+        "alert",
+        "error",
+        "feedback",
+        "message",
+        "notification"
+      ],
+      "ogdsComponentType": "alert",
+      "ogdsElement": "ogds-alert",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-alert",
+      "section": "feedback",
+      "variant": "error",
+      "requiresJs": "no",
+      "interaction": [
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "task-list-step",
+        "primary-nav"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "alert/error.resolved.html"
+    },
+    {
+      "file": "alert/info.html",
+      "title": "Alert (info)",
+      "_schemaVersion": 2,
+      "description": "Info alert with left accent bar and icon, from the Open Government Design System web components.",
+      "tier": "curated",
+      "tags": [
+        "alert",
+        "info",
+        "feedback",
+        "message",
+        "notification"
+      ],
+      "ogdsComponentType": "alert",
+      "ogdsElement": "ogds-alert",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-alert",
+      "section": "feedback",
+      "variant": "info",
+      "requiresJs": "no",
+      "interaction": [
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "task-list-step",
+        "primary-nav"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "alert/info.resolved.html"
+    },
+    {
+      "file": "alert/no-icon.html",
+      "title": "Alert (no icon)",
+      "_schemaVersion": 2,
+      "description": "Alert variant that hides the decorative type icon via the ogds-alert--no-icon modifier.",
+      "tier": "curated",
+      "tags": [
+        "alert",
+        "no-icon",
+        "feedback",
+        "message"
+      ],
+      "ogdsComponentType": "alert",
+      "ogdsElement": "ogds-alert",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-alert",
+      "section": "feedback",
+      "variant": "no-icon",
+      "requiresJs": "no",
+      "interaction": [
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "alert/no-icon.resolved.html"
+    },
+    {
+      "file": "alert/slim.html",
+      "title": "Alert (slim)",
+      "_schemaVersion": 2,
+      "description": "Compact alert without a heading; the icon renders inline with the text.",
+      "tier": "curated",
+      "tags": [
+        "alert",
+        "slim",
+        "compact",
+        "feedback",
+        "message"
+      ],
+      "ogdsComponentType": "alert",
+      "ogdsElement": "ogds-alert",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-alert",
+      "section": "feedback",
+      "variant": "slim",
+      "requiresJs": "no",
+      "interaction": [
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "alert/slim.resolved.html"
+    },
+    {
+      "file": "alert/success.html",
+      "title": "Alert (success)",
+      "_schemaVersion": 2,
+      "description": "Success alert with left accent bar and icon, from the Open Government Design System web components.",
+      "tier": "curated",
+      "tags": [
+        "alert",
+        "success",
+        "feedback",
+        "message",
+        "notification"
+      ],
+      "ogdsComponentType": "alert",
+      "ogdsElement": "ogds-alert",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-alert",
+      "section": "feedback",
+      "variant": "success",
+      "requiresJs": "no",
+      "interaction": [
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "task-list-step",
+        "primary-nav"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "alert/success.resolved.html"
+    },
+    {
+      "file": "alert/warning.html",
+      "title": "Alert (warning)",
+      "_schemaVersion": 2,
+      "description": "Warning alert with left accent bar and icon, from the Open Government Design System web components.",
+      "tier": "curated",
+      "tags": [
+        "alert",
+        "warning",
+        "feedback",
+        "message",
+        "notification"
+      ],
+      "ogdsComponentType": "alert",
+      "ogdsElement": "ogds-alert",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-alert",
+      "section": "feedback",
+      "variant": "warning",
+      "requiresJs": "no",
+      "interaction": [
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "task-list-step",
+        "primary-nav"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "alert/warning.resolved.html"
+    },
+    {
+      "file": "banner/default.html",
+      "title": "Banner (default)",
+      "_schemaVersion": 2,
+      "description": "Official-government-website identification banner with expandable .gov/.mil and HTTPS guidance.",
+      "tier": "curated",
+      "tags": [
+        "banner",
+        "official website",
+        "gov",
+        "mil",
+        "https",
+        "identification"
+      ],
+      "ogdsComponentType": "banner",
+      "ogdsElement": "ogds-banner",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-banner",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "optional",
+      "interaction": [
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "header",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "origin": "design-system",
+      "resolvedView": "banner/default.resolved.html"
+    },
+    {
+      "file": "banner/espanol.html",
+      "title": "Banner (espanol)",
+      "_schemaVersion": 2,
+      "description": "Official-government-website identification banner in Spanish, with expandable .gov and HTTPS guidance.",
+      "tier": "curated",
+      "tags": [
+        "banner",
+        "official website",
+        "gov",
+        "mil",
+        "https",
+        "identification"
+      ],
+      "ogdsComponentType": "banner",
+      "ogdsElement": "ogds-banner",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-banner",
+      "section": "navigation",
+      "variant": "espanol",
+      "requiresJs": "optional",
+      "interaction": [
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "header",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "origin": "design-system",
+      "resolvedView": "banner/espanol.resolved.html"
+    },
+    {
+      "file": "banner/expanded.html",
+      "title": "Banner (expanded)",
+      "_schemaVersion": 2,
+      "description": "Official-government-website identification banner with expandable .gov/.mil and HTTPS guidance.",
+      "tier": "curated",
+      "tags": [
+        "banner",
+        "official website",
+        "gov",
+        "mil",
+        "https",
+        "identification"
+      ],
+      "ogdsComponentType": "banner",
+      "ogdsElement": "ogds-banner",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-banner",
+      "section": "navigation",
+      "variant": "expanded",
+      "requiresJs": "optional",
+      "interaction": [
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "header",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "origin": "design-system",
+      "resolvedView": "banner/expanded.resolved.html"
+    },
+    {
+      "file": "banner/mil.html",
+      "title": "Banner (mil)",
+      "_schemaVersion": 2,
+      "description": "Official-government-website identification banner with expandable .gov/.mil and HTTPS guidance.",
+      "tier": "curated",
+      "tags": [
+        "banner",
+        "official website",
+        "gov",
+        "mil",
+        "https",
+        "identification"
+      ],
+      "ogdsComponentType": "banner",
+      "ogdsElement": "ogds-banner",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-banner",
+      "section": "navigation",
+      "variant": "mil",
+      "requiresJs": "optional",
+      "interaction": [
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "header",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "origin": "design-system",
+      "resolvedView": "banner/mil.resolved.html"
+    },
+    {
+      "file": "header/basic.html",
+      "title": "Header (basic)",
+      "_schemaVersion": 2,
+      "description": "Responsive site header (logo, menu button, primary nav row; extended adds a secondary nav row) matching the USWDS header patterns.",
+      "tier": "curated",
+      "tags": [
+        "header",
+        "navigation",
+        "navbar",
+        "site header",
+        "masthead"
+      ],
+      "ogdsComponentType": "header",
+      "ogdsElement": "ogds-header",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-header",
+      "section": "navigation",
+      "variant": "basic",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": false,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "primary-nav",
+        "accordion",
+        "banner"
+      ],
+      "prerequisites": [
+        "primary-nav"
+      ],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "origin": "design-system",
+      "resolvedView": "header/basic.resolved.html"
+    },
+    {
+      "file": "header/extended.html",
+      "title": "Header (extended)",
+      "_schemaVersion": 2,
+      "description": "Responsive site header (logo, menu button, primary nav row; extended adds a secondary nav row) matching the USWDS header patterns.",
+      "tier": "curated",
+      "tags": [
+        "header",
+        "navigation",
+        "navbar",
+        "site header",
+        "masthead"
+      ],
+      "ogdsComponentType": "header",
+      "ogdsElement": "ogds-header",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-header",
+      "section": "navigation",
+      "variant": "extended",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": false,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "primary-nav",
+        "accordion",
+        "banner"
+      ],
+      "prerequisites": [
+        "primary-nav"
+      ],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "origin": "design-system",
+      "resolvedView": "header/extended.resolved.html"
+    },
+    {
+      "file": "primary-nav/class-only.html",
+      "title": "Primary Nav (class-only)",
+      "_schemaVersion": 2,
+      "description": "Responsive primary navigation: stacked list below the desktop breakpoint, horizontal bar with exclusive-open dropdown submenus at >=64rem.",
+      "tier": "curated",
+      "tags": [
+        "navigation",
+        "nav",
+        "menu",
+        "submenu",
+        "dropdown"
+      ],
+      "ogdsComponentType": "primary-nav",
+      "ogdsElement": "ogds-primary-nav",
+      "ogdsUsage": "css-class",
+      "ogdsClass": "ogds-primary-nav",
+      "section": "navigation",
+      "variant": "class-only",
+      "requiresJs": "optional",
+      "interaction": [
+        "click",
+        "keyboard",
+        "hover"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "header",
+        "accordion"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "primary-nav/class-only.resolved.html"
+    },
+    {
+      "file": "primary-nav/default.html",
+      "title": "Primary Nav (default)",
+      "_schemaVersion": 2,
+      "description": "Responsive primary navigation: stacked list below the desktop breakpoint, horizontal bar with exclusive-open dropdown submenus at >=64rem.",
+      "tier": "curated",
+      "tags": [
+        "navigation",
+        "nav",
+        "menu",
+        "submenu",
+        "dropdown"
+      ],
+      "ogdsComponentType": "primary-nav",
+      "ogdsElement": "ogds-primary-nav",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-primary-nav",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "optional",
+      "interaction": [
+        "click",
+        "keyboard",
+        "hover"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "header",
+        "accordion"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "primary-nav/default.resolved.html"
+    },
+    {
+      "file": "task-list/default.html",
+      "title": "Task List (default)",
+      "_schemaVersion": 2,
+      "description": "Task progress list: \"N of M tasks completed\" counter heading plus steps with status badges (not started, in progress, completed, cannot start yet).",
+      "tier": "curated",
+      "tags": [
+        "task list",
+        "progress",
+        "steps",
+        "workflow",
+        "counter",
+        "multi-page form"
+      ],
+      "ogdsComponentType": "task-list",
+      "ogdsElement": "ogds-task-list",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-task-list",
+      "section": "content",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "task-list-step",
+        "alert",
+        "accordion"
+      ],
+      "prerequisites": [
+        "task-list-step"
+      ],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "origin": "design-system",
+      "resolvedView": "task-list/default.resolved.html"
+    },
+    {
+      "file": "task-list-step/blocked.html",
+      "title": "Task List Step (blocked)",
+      "_schemaVersion": 2,
+      "description": "Non-interactive task-list step (cannot-start-yet) with a blocked message instead of a link.",
+      "tier": "curated",
+      "tags": [
+        "task list",
+        "step",
+        "cannot-start-yet",
+        "badge",
+        "workflow"
+      ],
+      "ogdsComponentType": "task-list-step",
+      "ogdsElement": "ogds-task-list-step",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-task-list-step",
+      "section": "content",
+      "variant": "blocked",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "task-list",
+        "alert"
+      ],
+      "prerequisites": [
+        "task-list"
+      ],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "task-list-step/blocked.resolved.html"
+    },
+    {
+      "file": "task-list-step/default.html",
+      "title": "Task List Step (default)",
+      "_schemaVersion": 2,
+      "description": "A single task-list step: title link, status badge, optional description — embed inside an ogds-task-list.",
+      "tier": "curated",
+      "tags": [
+        "task list",
+        "step",
+        "in-progress",
+        "badge",
+        "workflow"
+      ],
+      "ogdsComponentType": "task-list-step",
+      "ogdsElement": "ogds-task-list-step",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-task-list-step",
+      "section": "content",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "task-list",
+        "alert"
+      ],
+      "prerequisites": [
+        "task-list"
+      ],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "task-list-step/default.resolved.html"
+    },
+    {
+      "file": "task-list-step/with-alert.html",
+      "title": "Task List Step (with-alert)",
+      "_schemaVersion": 2,
+      "description": "Task-list step with an embedded warning alert between the badge and the description.",
+      "tier": "curated",
+      "tags": [
+        "task list",
+        "step",
+        "in-progress",
+        "badge",
+        "workflow"
+      ],
+      "ogdsComponentType": "task-list-step",
+      "ogdsElement": "ogds-task-list-step",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-task-list-step",
+      "section": "content",
+      "variant": "with-alert",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "task-list",
+        "alert"
+      ],
+      "prerequisites": [
+        "task-list"
+      ],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "task-list-step/with-alert.resolved.html"
+    },
+    {
+      "file": "task-list-step/with-saved-data.html",
+      "title": "Task List Step (with-saved-data)",
+      "_schemaVersion": 2,
+      "description": "Completed task-list step showing the user's submitted data as a definition list.",
+      "tier": "curated",
+      "tags": [
+        "task list",
+        "step",
+        "completed",
+        "badge",
+        "workflow"
+      ],
+      "ogdsComponentType": "task-list-step",
+      "ogdsElement": "ogds-task-list-step",
+      "ogdsUsage": "web-component",
+      "ogdsClass": "ogds-task-list-step",
+      "section": "content",
+      "variant": "with-saved-data",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": false,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Section 508",
+        "WCAG 2.1 AA"
+      ],
+      "supportedTokenProfiles": [],
+      "relatedComponents": [
+        "task-list",
+        "alert"
+      ],
+      "prerequisites": [
+        "task-list"
+      ],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "origin": "design-system",
+      "resolvedView": "task-list-step/with-saved-data.resolved.html"
+    }
+  ]
+}

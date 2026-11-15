@@ -1,0 +1,253 @@
+{
+  "name": "ogds-ai-components",
+  "description": "Open Government Design System (ogds-elements) registry for AI coding agents. Self-contained static tiles flattened from the ogds-elements web components, with adaptation, coordination, and compliance metadata.",
+  "repo": "https://github.com/ednark/ogds-ai-components",
+  "base": "https://raw.githubusercontent.com/ednark/ogds-ai-components/main",
+  "count": 26,
+  "facetsUrl": "https://raw.githubusercontent.com/ednark/ogds-ai-components/main/infinite/facets.json",
+  "index": "https://raw.githubusercontent.com/ednark/ogds-ai-components/main/infinite/components.index.json",
+  "indexSchemaVersion": 1,
+  "metadataSchemaVersion": 2,
+  "tileFetchPattern": "https://raw.githubusercontent.com/ednark/ogds-ai-components/main/infinite/{file}",
+  "designSystem": {
+    "name": "Open Government Design System (ogds-elements)",
+    "version": "1.0.0-beta.2",
+    "package": "@ogds/elements",
+    "url": "https://github.com/open-government-design-system/ogds-elements",
+    "notes": "ogds-elements is a Lit web-component implementation of USWDS 3.x patterns, styled with @ogds/tokens (USWDS-derived token ramps). Tiles are the flattened rendered DOM of each component (shadow-DOM content with story slot content); the canonical consumption path is the web component itself, named per tile in ogdsElement. Ground truth: installed @ogds/elements@1.0.0-beta.2. Styling is verified against the package's stylesheets via tools/build-ground-truth.mjs — a mechanical :host/:host([attr])/::slotted/::part transform whose outputs (infinite/ground-truth/*.css) carry identical class names; markup is verified against the components' render() templates.",
+    "verification": {
+      "markup": "package-templates",
+      "styling": "package-css",
+      "packagePath": "node_modules/@ogds/elements",
+      "groundTruth": "installed-package"
+    }
+  },
+  "agentMetaId": "ogds-agent-meta",
+  "tileDir": "infinite",
+  "facets": [
+    "ogdsComponentType",
+    "section",
+    "variant",
+    "requiresJs",
+    "interaction",
+    "a11y",
+    "govCompliance",
+    "costTier",
+    "supportedTokenProfiles",
+    "origin"
+  ],
+  "additionalFields": [
+    "ogdsElement",
+    "ogdsUsage",
+    "ogdsClass"
+  ],
+  "govCompliance": [
+    "Section 508",
+    "WCAG 2.1 AA"
+  ],
+  "supportedDesignSystems": [
+    "uswds"
+  ],
+  "compatibilityPath": "compatibility.json",
+  "mcp": {
+    "enabled": true,
+    "server": "_base/mcp/server.mjs",
+    "transport": "stdio",
+    "tools": [
+      "search_components",
+      "get_component",
+      "list_facets",
+      "get_index",
+      "get_adapter",
+      "translate_component",
+      "get_recipe",
+      "query_compliance",
+      "get_versions"
+    ]
+  },
+  "tokenProfiles": {
+    "highContrast": {
+      "description": "forced-colors / high-contrast mode support (declared only where the component CSS carries forced-colors rules)",
+      "tokenOverrides": {
+        "border": "2px solid currentColor",
+        "background": "transparent"
+      }
+    }
+  },
+  "updated": "0.1.0",
+  "gaps": [
+    {
+      "concept": "button",
+      "status": "deferred",
+      "nearestAlternative": "none yet — use plain semantic <button> styled with --ogds-theme-button-* tokens (see ogds-accordion-toggle for the token-driven button pattern)",
+      "reason": "ogds-elements 1.0.0-beta.2 ships 7 components; button is not among them"
+    },
+    {
+      "concept": "text-input",
+      "status": "deferred",
+      "nearestAlternative": "none yet — use plain semantic <input> styled with @ogds/tokens",
+      "reason": "ogds-elements 1.0.0-beta.2 ships 7 components; form controls are not among them"
+    },
+    {
+      "concept": "select",
+      "status": "deferred",
+      "nearestAlternative": "none yet — use plain semantic <select> styled with @ogds/tokens",
+      "reason": "ogds-elements 1.0.0-beta.2 ships 7 components; form controls are not among them"
+    },
+    {
+      "concept": "checkbox",
+      "status": "deferred",
+      "nearestAlternative": "none yet — use plain semantic <input type=checkbox> styled with @ogds/tokens",
+      "reason": "ogds-elements 1.0.0-beta.2 ships 7 components; form controls are not among them"
+    },
+    {
+      "concept": "radio",
+      "status": "deferred",
+      "nearestAlternative": "none yet — use plain semantic <input type=radio> styled with @ogds/tokens",
+      "reason": "ogds-elements 1.0.0-beta.2 ships 7 components; form controls are not among them"
+    },
+    {
+      "concept": "textarea",
+      "status": "deferred",
+      "nearestAlternative": "none yet — use plain semantic <textarea> styled with @ogds/tokens",
+      "reason": "ogds-elements 1.0.0-beta.2 ships 7 components; form controls are not among them"
+    },
+    {
+      "concept": "card",
+      "status": "deferred",
+      "nearestAlternative": "none yet — compose with core layout classes",
+      "reason": "ogds-elements 1.0.0-beta.2 ships 7 components; card is not among them"
+    },
+    {
+      "concept": "footer",
+      "status": "deferred",
+      "nearestAlternative": "ogds-header (the footer counterpart is not yet implemented upstream)",
+      "reason": "ogds-elements 1.0.0-beta.2 ships 7 components; footer is not among them"
+    },
+    {
+      "concept": "breadcrumb",
+      "status": "deferred",
+      "nearestAlternative": "none yet — use plain semantic <nav aria-label='Breadcrumb'> with @ogds/tokens colors",
+      "reason": "ogds-elements 1.0.0-beta.2 ships 7 components; breadcrumb is not among them"
+    },
+    {
+      "concept": "link",
+      "status": "deferred",
+      "nearestAlternative": "none yet — use plain <a> styled with --ogds-theme-link-color tokens",
+      "reason": "ogds-elements 1.0.0-beta.2 ships 7 components; link is not among them"
+    },
+    {
+      "concept": "table",
+      "status": "deferred",
+      "nearestAlternative": "none yet — use plain semantic <table> styled with @ogds/tokens",
+      "reason": "ogds-elements 1.0.0-beta.2 ships 7 components; table is not among them"
+    }
+  ],
+  "staticView": {
+    "css": [
+      "infinite/ground-truth/ogds-tokens.css",
+      "infinite/ground-truth/ogds-components.css"
+    ],
+    "viewport": {
+      "width": 1280,
+      "height": 4000
+    },
+    "note": "Tiles inline their own component's derived CSS (token subset + transformed component styles), so they render self-contained. The full generated sheets are used for resolved views and the class ground-truth check.",
+    "classCheck": {
+      "prefix": [
+        "ogds-",
+        "usa-",
+        "grid-",
+        "tablet:"
+      ],
+      "allowlist": [
+        {
+          "class": "tablet:grid-col-6",
+          "reason": "Banner layout class from the ogds-banner package CSS (responsive USWDS grid column, defined in the banner stylesheet with an escaped-colon selector)"
+        },
+        {
+          "class": "usa-accordion__button",
+          "reason": "ogds-banner template class (render template parity with the USWDS banner); the shadow stylesheet styles this button via nested element selectors, not the class"
+        },
+        {
+          "class": "usa-accordion__content",
+          "reason": "ogds-banner template class (render template parity); the shadow stylesheet styles .content via nested element selectors, not the class"
+        },
+        {
+          "class": "grid-gap-lg",
+          "reason": "ogds-banner template class (USWDS grid-gap utility kept for template parity); the ogds shadow stylesheet carries no rule for it — spacing comes from .guidance/.content styles"
+        },
+        {
+          "class": "ogds-elements",
+          "reason": "not a class — the npm package name, caught by the ogds- prefix tokenizer in JSON prose scans"
+        },
+        {
+          "class": "ogds-ai-components",
+          "reason": "not a class — this registry's name, caught by the ogds- prefix tokenizer in JSON prose scans"
+        },
+        {
+          "class": "ogds-to-uswds",
+          "reason": "not a class — the compatibility.json section key ({source}-to-{target} convention), caught by the ogds- prefix tokenizer"
+        },
+        {
+          "class": "usa-accordion__heading",
+          "reason": "target-system class (USWDS) cited by the ogds-to-uswds compatibility map; verified against USWDS ground truth, not ogds"
+        },
+        {
+          "class": "usa-button",
+          "reason": "target-system class (USWDS) cited by the ogds-to-uswds compatibility map; verified against USWDS ground truth, not ogds"
+        },
+        {
+          "class": "usa-banner",
+          "reason": "target-system class (USWDS) cited by the ogds-to-uswds compatibility map; verified against USWDS ground truth, not ogds"
+        },
+        {
+          "class": "usa-banner__button",
+          "reason": "target-system class (USWDS) cited by the ogds-to-uswds compatibility map; verified against USWDS ground truth, not ogds"
+        },
+        {
+          "class": "usa-banner__header-text",
+          "reason": "target-system class (USWDS) cited by the ogds-to-uswds compatibility map; verified against USWDS ground truth, not ogds"
+        },
+        {
+          "class": "usa-banner__header-action",
+          "reason": "target-system class (USWDS) cited by the ogds-to-uswds compatibility map; verified against USWDS ground truth, not ogds"
+        },
+        {
+          "class": "usa-banner__header-flag",
+          "reason": "target-system class (USWDS) cited by the ogds-to-uswds compatibility map; verified against USWDS ground truth, not ogds"
+        },
+        {
+          "class": "usa-nav__secondary",
+          "reason": "target-system class (USWDS) cited by the ogds-to-uswds compatibility map; verified against USWDS ground truth, not ogds"
+        },
+        {
+          "class": "usa-header--extended",
+          "reason": "target-system class (USWDS) cited by the ogds-to-uswds compatibility map; verified against USWDS ground truth, not ogds"
+        },
+        {
+          "class": "usa-header--basic",
+          "reason": "target-system class (USWDS) cited by the ogds-to-uswds compatibility map; verified against USWDS ground truth, not ogds"
+        },
+        {
+          "class": "usa-current",
+          "reason": "target-system class (USWDS) cited by the ogds-to-uswds compatibility map; verified against USWDS ground truth, not ogds"
+        },
+        {
+          "class": "usa-tag",
+          "reason": "target-system class (USWDS) cited by the ogds-to-uswds compatibility map; verified against USWDS ground truth, not ogds"
+        }
+      ],
+      "scaffolding": [
+        "example-search",
+        "example-secondary-links"
+      ]
+    }
+  },
+  "modifierSeparators": [
+    "--",
+    "__",
+    "-"
+  ],
+  "behaviorContract": true
+}

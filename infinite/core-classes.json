@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "registry": "ogds-ai-components",
+  "description": "Real, documented design-system classes that are NOT tiled components — the untiled core layer for page assembly. Consumed by cross-registry coverage checking.",
+  "note": "ogds-elements 1.0.0-beta.2 ships no global utility layer — its components bundle their own layout rules inside their shadow stylesheets (the banner's USWDS-derived grid classes are listed here because tiles use them for page-adjacent layout). Token-driven styling of plain HTML uses the --ogds-theme-* / --ogds-color-* / --ogds-spacing-* custom properties documented in ogds-tokens.css.",
+  "categories": {
+    "layout": [
+      "grid-row",
+      "grid-col-auto",
+      "grid-col-fill",
+      "grid-gap-lg",
+      "tablet:grid-col-6"
+    ],
+    "typography": [],
+    "elements": [],
+    "states": []
+  }
+}

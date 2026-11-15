@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "registry": "ogds-ai-components",
+  "description": "Machine-readable trust surface: what this registry claims, and how far that claim has been checked. A registry with drift or unstamped tiles is telling you where not to trust it.",
+  "designSystem": {
+    "name": "Open Government Design System (ogds-elements)",
+    "pin": "1.0.0-beta.2",
+    "package": "@ogds/elements",
+    "groundTruth": "installed-package",
+    "verification": {
+      "markup": "package-templates",
+      "styling": "package-css"
+    }
+  },
+  "classCheck": {
+    "enabled": true,
+    "prefixes": [
+      "ogds-",
+      "usa-",
+      "grid-",
+      "tablet:"
+    ],
+    "allowlistSize": 19,
+    "categories": {
+      "canonicalUnstyled": 0,
+      "appLayer": 0,
+      "siteLayer": 0,
+      "extension": 0,
+      "drift": 0,
+      "compat": 13,
+      "registryInternal": 0,
+      "unclassified": 6
+    }
+  },
+  "stamps": {
+    "verified": 26,
+    "total": 26,
+    "percent": 100
+  },
+  "tiles": 26,
+  "families": 8,
+  "coreClasses": 5,
+  "observations": 0,
+  "convergenceWatchlist": null,
+  "findings": {
+    "count": 1,
+    "lastDeepCheck": null,
+    "openItems": [],
+    "byResult": {
+      "fixed": 1
+    }
+  },
+  "conformance": "pass",
+  "generatedBy": "_base/generate-health.mjs",
+  "generatedAt": "2026-11-15"
+}
